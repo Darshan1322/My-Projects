@@ -135,18 +135,27 @@ const MyEditor = () => {
 
   return (
     <div>
-      <input
+      {/* <input
         type="text"
         value={title}
         onChange={handleTitleChange}
         placeholder="Enter title here"
-      />
-      <button onClick={saveContent}>Save</button>
+      /> */}
+      Demo Editor by Darshan
+      <button
+        onClick={saveContent}
+        style={{ float: "right", margin: "10px", marginTop: "3px" }}
+      >
+        Save
+      </button>
       <div
         style={{
           border: "1px solid #ddd",
           padding: "10px",
           minHeight: "200px",
+          margin: "10px",
+          padding: "10px",
+          border: "2px solid skyblue",
         }}
       >
         <Editor
